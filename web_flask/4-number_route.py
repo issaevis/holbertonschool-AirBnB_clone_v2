@@ -29,7 +29,6 @@ def variable_pyth(text="is cool"):
     return f"Python {ttext}"
 
 
-@app.route('/number/')
 @app.route("/number/<int:n>", strict_slashes=False)
 def is_n(n):
     return f"{n} is a number"
