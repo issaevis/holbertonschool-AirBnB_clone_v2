@@ -22,8 +22,9 @@ def variable(text):
     return f"C {ttext}"
 
 
+@app.route('/python/')
 @app.route("/python/<text>", strict_slashes=False)
-def variable(text="is cool"):
+def variable_pyth(text="is cool"):
     ttext = text.replace('_', ' ')
     return f"Python {ttext}"
 
