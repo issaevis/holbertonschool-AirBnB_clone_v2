@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''module for flask program'''
+'''module for flask with two routes'''
 from flask import Flask
 
 app = Flask(__name__)
