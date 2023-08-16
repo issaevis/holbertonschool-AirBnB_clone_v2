@@ -18,11 +18,8 @@ def hbnb():
 
 @app.route("/c/<text>", strict_slashes=False)
 def variable(text):
-    for letter in text:
-        if letter is "_":
-            letter = " "
-
-    return f"C {text}"
+    ttext = text.replace('_', ' ')
+    return f"C {ttext}"
 
 
 if __name__ == "__main__":
