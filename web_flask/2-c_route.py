@@ -22,7 +22,7 @@ def variable(text):
         if letter is "_":
             letter = " "
 
-    return f"C {escape(text)}"
+    return f"C {text}"
 
 
 if __name__ == "__main__":
