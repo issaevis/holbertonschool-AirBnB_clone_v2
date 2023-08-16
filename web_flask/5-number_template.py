@@ -35,7 +35,7 @@ def is_n(n):
 
 
 @app.route("/number_template/<int:n>", strict_slashes=False)
-def is_n_template(n):
+def is_n_template(n=None):
     return render_template("5-number.html", n=n)
 
 
