@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-from flask import Flask
 
+from flask import Flask
+'''module for the first flask program'''
 app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
