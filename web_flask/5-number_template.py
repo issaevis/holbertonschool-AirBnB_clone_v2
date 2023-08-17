@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''module for flask with variables and multole routes'''
 from flask import Flask
+from flask import render_template
 
 
 app = Flask(__name__)
@@ -39,5 +40,5 @@ def is_n_template(n=None):
     return render_template("5-number.html", n=n)
 
 
-if _name__ == "__main__":
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)

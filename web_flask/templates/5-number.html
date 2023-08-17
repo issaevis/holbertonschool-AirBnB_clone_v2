@@ -1,9 +1,12 @@
+{# template file for 5 #}
 <!DOCTYPE html>
-<HTML lang="en">
-    <HEAD>
-        <TITLE>HBNB</TITLE>
-    </HEAD>
-    <BODY>
-        <H1>Number: 89</H1>
-    </BODY>
-</HTML>
+    <HTML lang="en">
+        <HEAD>
+            <TITLE>HBNB</TITLE>
+        </HEAD>
+        <BODY>
+            {% if n %}
+                <H1>Number: {{n}}</H1>
+            {% endif %}
+        </BODY>
+    </HTML>
