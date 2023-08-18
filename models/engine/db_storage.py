@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Returns all data"""
 from sqlalchemy import create_engine, MetaData
