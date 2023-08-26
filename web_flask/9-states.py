@@ -11,18 +11,18 @@ app = Flask(__name__)
 
 
 @app.route('/states', strict_slashes=False)
-def list_states():
-    states = storage.all(State).values()
-    return render_template("9-states.html", states=states, mode="all")
+def state_ls():
+    states = storage.all("State").values()
+    return render_template('9-states.html', states=states, mode='all')
 
 
 @app.route('/states/<id>', strict_slashes=False)
-def show_state_cities(id):
+def state_id(id):
     states = storage.all("State").values()
     for state in states:
         if state.id == id:
-            return render_template("9-state.html", state=state, mode="id")
-        return render_template("9-state.html", state=state, mode="none")
+            return render_template('9-states.html', states=state, mode='id')
+    return render_template('9-states.html', states=state, mode=';')
 
 
 @app.teardown_appcontext
